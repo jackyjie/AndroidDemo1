@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/cal_a"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/cal_method"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="-"/>-->
+
+    <Spinner
+        android:id="@+id/cal_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:entries="@array/languages">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/cal_b"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/cal_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="/>
+
+    <EditText
+        android:id="@+id/cal_result"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"/>
+
+</LinearLayout>

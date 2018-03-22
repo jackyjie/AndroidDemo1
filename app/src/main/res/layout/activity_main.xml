@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Menu Test"
+        android:id="@+id/menu_test"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="隐式Intent Test"
+        android:id="@+id/virtual_intent_test"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="View Test"
+        android:id="@+id/view_test"/>
+
+    <Button
+        android:id="@+id/elseFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他功能如QRCODE test"
+        android:textSize="24sp"/>
+</LinearLayout>

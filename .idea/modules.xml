@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FirstCodeAndroid.iml" filepath="$PROJECT_DIR$/FirstCodeAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglibrary-release/zxinglibrary-release.iml" filepath="$PROJECT_DIR$/zxinglibrary-release/zxinglibrary-release.iml" />
+    </modules>
+  </component>
+</project>
