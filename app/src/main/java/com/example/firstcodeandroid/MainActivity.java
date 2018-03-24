@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.firstcodeandroid.Broadcast.StartActivity5;
+import com.example.firstcodeandroid.Data.StartActivity6;
 import com.example.firstcodeandroid.Else.StartActivity3;
 import com.example.firstcodeandroid.Intent.StartActivity1;
 import com.example.firstcodeandroid.Menu.MenuTest;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button elseFunction;
     private Button padTest;
     private Button broadcast;
+    private Button data_test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         padTest.setOnClickListener(this);
         broadcast = (Button)findViewById(R.id.broadcast);
         broadcast.setOnClickListener(this);
+        data_test = (Button)findViewById(R.id.data_test);
+        data_test.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +70,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.broadcast:
                 intent = new Intent(this, StartActivity5.class);
+                startActivity(intent);
+                break;
+            case R.id.data_test:
+                intent = new Intent(this, StartActivity6.class);
                 startActivity(intent);
                 break;
 

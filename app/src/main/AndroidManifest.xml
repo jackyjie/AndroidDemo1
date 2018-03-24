@@ -87,7 +87,9 @@
 
         <activity android:name=".Broadcast.BroadcastBestPractise" />
         <activity android:name=".Broadcast.LoginActivity" />
-        <activity android:name=".Broadcast.ForceDownActivity"></activity>
+        <activity android:name=".Broadcast.ForceDownActivity" />
+        <activity android:name=".Data.StartActivity6" />
+        <activity android:name=".Data.FileActivity"></activity>
     </application>
 
 </manifest>

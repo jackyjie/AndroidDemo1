@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/file_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/file_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件存储"/>
+
+    <Button
+        android:id="@+id/file_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件读取"/>
+
+    <TextView
+        android:text="以下为sharepreferences引用"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/share_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="引用键值对存储"/>
+
+    <Button
+        android:id="@+id/share_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="引用键值对读取"/>
+</LinearLayout>

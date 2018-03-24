@@ -45,4 +45,11 @@
         android:layout_height="wrap_content"
         android:text="广播 test"
         android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/data_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="持久化数据 test"
+        android:textSize="24sp"/>
 </LinearLayout>
