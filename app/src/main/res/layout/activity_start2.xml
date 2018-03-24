@@ -31,4 +31,55 @@
         android:layout_height="wrap_content"
         android:text="RelativeLayout 相对布局"
         android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/relative_layout_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelatvieLayout 相对布局2"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/framelayout_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout 帧布局"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/framelayout_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Framelayout 帧布局2"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/percentLayout_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="百分比布局"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/titleLayout_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义布局 标题"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/titleLayout_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义布局 标题2"
+        android:textSize="24sp"/>
+
+
+    <Button
+        android:id="@+id/listview_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="列表框"
+        android:textSize="24sp"/>
+
 </LinearLayout>

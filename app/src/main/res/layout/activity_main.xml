@@ -31,4 +31,18 @@
         android:layout_height="wrap_content"
         android:text="其他功能如QRCODE test"
         android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/padFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机平板碎片 test"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广播 test"
+        android:textSize="24sp"/>
 </LinearLayout>

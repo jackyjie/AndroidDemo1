@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.firstcodeandroid.Broadcast.StartActivity5;
 import com.example.firstcodeandroid.Else.StartActivity3;
 import com.example.firstcodeandroid.Intent.StartActivity1;
 import com.example.firstcodeandroid.Menu.MenuTest;
 import com.example.firstcodeandroid.Views.StartActivity2;
+import com.example.firstcodeandroid.Views.padView.StartActivity4;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button virtual_intent_test;
     private Button view_test;
     private Button elseFunction;
+    private Button padTest;
+    private Button broadcast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         view_test.setOnClickListener(this);
         elseFunction = (Button)findViewById(R.id.elseFunction);
         elseFunction.setOnClickListener(this);
+        padTest = (Button)findViewById(R.id.padFunction);
+        padTest.setOnClickListener(this);
+        broadcast = (Button)findViewById(R.id.broadcast);
+        broadcast.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +58,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.elseFunction:
                 intent = new Intent(this, StartActivity3.class);
+                startActivity(intent);
+                break;
+            case R.id.padFunction:
+                intent = new Intent(this, StartActivity4.class);
+                startActivity(intent);
+                break;
+            case R.id.broadcast:
+                intent = new Intent(this, StartActivity5.class);
                 startActivity(intent);
                 break;
 

@@ -1,8 +1,56 @@
 package com.example.firstcodeandroid.Views.ListView;
 
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.firstcodeandroid.R;
+
+import java.util.List;
+
 /**
  * Created by JackR on 2018/3/22.
  */
 
-public class FruitAdapter3 {
+public class FruitAdapter3 extends RecyclerView.Adapter<FruitAdapter3.ViewHolder> {
+
+    private List<Fruit> fruitList;
+
+    static class ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView image_view;
+        TextView text_view;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            image_view = (ImageView)itemView.findViewById(R.id.item_image_view2);
+            text_view = (TextView)itemView.findViewById(R.id.item_text2);
+        }
+    }
+
+    public FruitAdapter3(List<Fruit> _fruitList) {
+        fruitList = _fruitList;
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fruit_item2, parent, false);
+        ViewHolder holder = new ViewHolder(view);
+        return holder;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Fruit fruit = fruitList.get(position);
+        holder.image_view.setImageResource(fruit.getImageId());
+        holder.text_view.setText(fruit.getFruitName());
+    }
+
+    @Override
+    public int getItemCount() {
+        return fruitList.size();
+    }
 }

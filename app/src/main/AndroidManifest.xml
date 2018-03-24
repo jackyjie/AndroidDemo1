@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.firstcodeandroid">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +35,59 @@
         <activity android:name=".Else.QrCodeActivity" />
         <activity android:name=".Else.StartActivity3" />
         <activity android:name=".Else.QrCodeLogoActivity" />
-        <activity android:name=".Else.CalculateActivity"></activity>
+        <activity android:name=".Else.CalculateActivity" />
+        <activity android:name=".Views.RelativeLayoutActivity" />
+        <activity android:name=".Views.FrameLayoutActivity" />
+        <activity android:name=".MainActivity$RelativeLayoutActivity2" />
+        <activity android:name=".Views.FramelayoutActivity2" />
+        <activity android:name=".Views.PercentLayoutActivity" />
+        <activity android:name=".Views.TitleLayoutActivity" />
+        <activity android:name=".Views.TitleLayoutActivity2" />
+        <activity android:name=".Views.ListView.StartActivity22" />
+        <activity android:name=".Views.ListView.ListViewActivity" />
+        <activity android:name=".Views.ListView.ListViewActivity2" />
+        <activity android:name=".Views.ListView.RecycleViewActivity" />
+        <activity android:name=".Views.ListView.RecycleViewVerticalActivity" />
+        <activity android:name=".Views.ListView.RecycleViewPoolActivity" />
+        <activity android:name=".Views.ListView.RecycleViewClickActivity" />
+        <activity android:name=".Views.ListView.NinePatchActivity" />
+        <activity android:name=".Views.padView.StartActivity4" />
+        <activity android:name=".Views.padView.FragmentTest" />
+        <activity android:name=".Views.padView.FragmentTest2" />
+        <activity android:name=".Broadcast.StartActivity5" />
+        <activity android:name=".Broadcast.BroadcastActivity" />
+
+        <receiver
+            android:name=".Broadcast.BroadCastStatic"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Broadcast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.firstcodeandroid.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Broadcast.BroadcastCustomStandardActivity" />
+
+        <receiver
+            android:name=".Broadcast.MyBroadcastReceiver2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.firstcodeandroid.MY_BROADCAST2" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Broadcast.BroadcastBestPractise" />
+        <activity android:name=".Broadcast.LoginActivity" />
+        <activity android:name=".Broadcast.ForceDownActivity"></activity>
     </application>
 
 </manifest>
