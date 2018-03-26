@@ -1,6 +1,7 @@
 package com.example.firstcodeandroid.Data;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,6 +27,9 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
     private Button file_get;
     private Button share_save;
     private Button share_get;
+    private Button remember;
+    private Button sqlite;
+    private Button sqlite_LitePal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,12 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
         share_get = (Button)findViewById(R.id.share_get);
         share_save.setOnClickListener(this);
         share_get.setOnClickListener(this);
+        remember = (Button)findViewById(R.id.remember_password);
+        remember.setOnClickListener(this);
+        sqlite = (Button)findViewById(R.id.databse_sqlite);
+        sqlite.setOnClickListener(this);
+        sqlite = (Button)findViewById(R.id.databse_sqlite_LitePal);
+        sqlite.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +80,18 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.share_get:
                 String input_text4 = shareLoad("name");
                 Toast.makeText(this, "文件读取：" + input_text4, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.remember_password:
+                Intent intent = new Intent(this, RememberPasswordActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.databse_sqlite:
+                Intent intent1 = new Intent(this, SQLiteActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.databse_sqlite_LitePal:
+                Intent intent2 = new Intent(this, LitePalActivity.class);
+                startActivity(intent2);
                 break;
         }
     }
