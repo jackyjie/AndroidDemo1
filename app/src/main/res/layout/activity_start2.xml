@@ -74,12 +74,19 @@
         android:text="自定义布局 标题2"
         android:textSize="24sp"/>
 
-
     <Button
         android:id="@+id/listview_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="列表框"
         android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/material_desgin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaterialDesign设计规范"
+        android:textSize="24sp"/>
+
 
 </LinearLayout>

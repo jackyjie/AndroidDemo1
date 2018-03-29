@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/web_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="webView"/>
+
+    <Button
+        android:id="@+id/web_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HttpCollection"/>
+
+    <Button
+        android:id="@+id/okHttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OkHttp调用"/>
+
+    <Button
+        android:id="@+id/xmlPull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xmlPull解析"/>
+
+    <Button
+        android:id="@+id/xmlSax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xmlSax解析"/>
+
+    <Button
+        android:id="@+id/jsonObject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jsonObject json解析"/>
+
+    <Button
+        android:id="@+id/jsonGson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GSON json解析"/>
+
+    <TextView
+        android:id="@+id/web_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is TextView"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/media_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送通知"/>
+
+    <Button
+        android:id="@+id/media_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送通知可以点击,听音乐震动闪烁"/>
+
+    <Button
+        android:id="@+id/media_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送通知富效果"/>
+
+    <Button
+        android:id="@+id/camera_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摄像头调用"/>
+
+    <Button
+        android:id="@+id/camera_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从相片中选择按钮"/>
+
+    <Button
+        android:id="@+id/media_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音频情况"/>
+
+    <ImageView
+        android:id="@+id/camera_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

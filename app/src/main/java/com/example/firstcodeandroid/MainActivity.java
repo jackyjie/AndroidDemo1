@@ -11,8 +11,13 @@ import com.example.firstcodeandroid.Data.StartActivity6;
 import com.example.firstcodeandroid.Else.StartActivity3;
 import com.example.firstcodeandroid.Intent.StartActivity1;
 import com.example.firstcodeandroid.Menu.MenuTest;
+import com.example.firstcodeandroid.MultiMedia.StartActivity8;
+import com.example.firstcodeandroid.Permission.StartActivity7;
+import com.example.firstcodeandroid.Service.StartActivity9;
 import com.example.firstcodeandroid.Views.StartActivity2;
 import com.example.firstcodeandroid.Views.padView.StartActivity4;
+import com.example.firstcodeandroid.Web.StartActivity10;
+import com.example.firstcodeandroid.map.StartActivity11;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button padTest;
     private Button broadcast;
     private Button data_test;
+    private Button runtime_permission_test;
+    private Button media_test;
+    private Button service_test;
+    private Button web_test;
+    private Button map_test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +52,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         broadcast.setOnClickListener(this);
         data_test = (Button)findViewById(R.id.data_test);
         data_test.setOnClickListener(this);
+        runtime_permission_test = (Button)findViewById(R.id.runtime_permission_test);
+        runtime_permission_test.setOnClickListener(this);
+        media_test = (Button)findViewById(R.id.media_test);
+        media_test.setOnClickListener(this);
+        service_test = (Button)findViewById(R.id.service_test);
+        service_test.setOnClickListener(this);
+        web_test = (Button)findViewById(R.id.web_test);
+        web_test.setOnClickListener(this);
+        map_test = (Button)findViewById(R.id.map_test);
+        map_test.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +94,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.data_test:
                 intent = new Intent(this, StartActivity6.class);
+                startActivity(intent);
+                break;
+            case R.id.runtime_permission_test:
+                intent  = new Intent(this, StartActivity7.class);
+                startActivity(intent);
+                break;
+            case R.id.media_test:
+                intent = new Intent(this, StartActivity8.class);
+                startActivity(intent);
+                break;
+            case R.id.service_test:
+                intent = new Intent(this, StartActivity9.class);
+                startActivity(intent);
+                break;
+            case R.id.web_test:
+                intent = new Intent(this, StartActivity10.class);
+                startActivity(intent);
+                break;
+            case R.id.map_test:
+                intent = new Intent(this, StartActivity11.class);
                 startActivity(intent);
                 break;
 

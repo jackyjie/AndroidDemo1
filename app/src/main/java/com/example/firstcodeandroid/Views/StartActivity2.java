@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 import com.example.firstcodeandroid.R;
 import com.example.firstcodeandroid.Views.ListView.StartActivity22;
+import com.example.firstcodeandroid.Views.MaterialDesign.StartActivity23;
 
 public class StartActivity2 extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +24,7 @@ public class StartActivity2 extends AppCompatActivity implements View.OnClickLis
     private Button TitleLayout_test;
     private Button TitleLayout_test2;
     private Button ListView_test;
+    private Button material_desgin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,8 @@ public class StartActivity2 extends AppCompatActivity implements View.OnClickLis
         TitleLayout_test2.setOnClickListener(this);
         ListView_test = (Button)findViewById(R.id.listview_test);
         ListView_test.setOnClickListener(this);
+        material_desgin = (Button)findViewById(R.id.material_desgin);
+        material_desgin.setOnClickListener(this);
     }
 
     @Override
@@ -98,6 +102,10 @@ public class StartActivity2 extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.listview_test:
                 intent = new Intent(this, StartActivity22.class);
+                startActivity(intent);
+                break;
+            case R.id.material_desgin:
+                intent = new Intent(this, StartActivity23.class);
                 startActivity(intent);
                 break;
         };

@@ -5,6 +5,13 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/map_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地图服务 test"
+        android:textSize="24sp"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
@@ -52,4 +59,32 @@
         android:layout_height="wrap_content"
         android:text="持久化数据 test"
         android:textSize="24sp"/>
+    <Button
+        android:id="@+id/runtime_permission_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运行时权限 test"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/media_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多媒体 test"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/service_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务 test"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/web_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络技术 test"
+        android:textSize="24sp"/>
+
 </LinearLayout>
