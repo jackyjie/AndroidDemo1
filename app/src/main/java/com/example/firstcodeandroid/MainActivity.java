@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.firstcodeandroid.Advanced.AlarmService;
 import com.example.firstcodeandroid.Broadcast.StartActivity5;
 import com.example.firstcodeandroid.Data.StartActivity6;
 import com.example.firstcodeandroid.Else.StartActivity3;
@@ -113,10 +114,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.map_test:
-                intent = new Intent(this, StartActivity11.class);
-                startActivity(intent);
+                intent = new Intent(this, AlarmService.class);
+                startService(intent);
+//                intent = new Intent(this, StartActivity11.class);
+//                startActivity(intent);
                 break;
-
         }
     }
 }

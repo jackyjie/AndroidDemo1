@@ -1,5 +1,7 @@
 package com.example.firstcodeandroid.Utils;
 
+import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -21,6 +23,11 @@ public class HttpUtil {
     * listener 回调函数
     * */
     public static  void sendHttpRequest(final String address, final HttpCallbackListener listener){
+        if(!isNetworkAvailable()){
+            Toast.makeText(MyApplication.getContext(), "network is unAvailable", Toast.LENGTH_SHORT).show();
+            return ;
+        }
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -59,6 +66,13 @@ public class HttpUtil {
 
             }
         }).start();
+    }
+    
+    /*
+    * 判断网络是否断开
+    * */
+    private static boolean isNetworkAvailable(){
+        return true;
     }
 
     /*

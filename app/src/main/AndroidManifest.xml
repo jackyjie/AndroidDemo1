@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="org.litepal.LitePalApplication"
+        android:name=".Utils.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -166,7 +166,13 @@
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name=".Views.MaterialDesign.StartActivity23"></activity>
+        <activity android:name=".Views.MaterialDesign.StartActivity23" />
+        <activity android:name=".Advanced.TimerActivity" />
+
+        <service
+            android:name=".Advanced.AlarmService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
