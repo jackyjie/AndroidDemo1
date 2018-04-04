@@ -15,6 +15,7 @@ import com.example.firstcodeandroid.Menu.MenuTest;
 import com.example.firstcodeandroid.MultiMedia.StartActivity8;
 import com.example.firstcodeandroid.Permission.StartActivity7;
 import com.example.firstcodeandroid.Service.StartActivity9;
+import com.example.firstcodeandroid.Views.ElseListView.ListView1Activity;
 import com.example.firstcodeandroid.Views.StartActivity2;
 import com.example.firstcodeandroid.Views.padView.StartActivity4;
 import com.example.firstcodeandroid.Web.StartActivity10;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button service_test;
     private Button web_test;
     private Button map_test;
+    private Button practise_test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,28 +43,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         menu_test = (Button)findViewById(R.id.menu_test);
         virtual_intent_test = (Button)findViewById(R.id.virtual_intent_test);
+        view_test = (Button)findViewById(R.id.view_test);
+        elseFunction = (Button)findViewById(R.id.elseFunction);
+        padTest = (Button)findViewById(R.id.padFunction);
+        broadcast = (Button)findViewById(R.id.broadcast);
+        data_test = (Button)findViewById(R.id.data_test);
+        runtime_permission_test = (Button)findViewById(R.id.runtime_permission_test);
+        media_test = (Button)findViewById(R.id.media_test);
+        service_test = (Button)findViewById(R.id.service_test);
+        web_test = (Button)findViewById(R.id.web_test);
+        map_test = (Button)findViewById(R.id.map_test);
+        practise_test = (Button)findViewById(R.id.practise_test);
         menu_test.setOnClickListener(this);
         virtual_intent_test.setOnClickListener(this);
-        view_test = (Button)findViewById(R.id.view_test);
         view_test.setOnClickListener(this);
-        elseFunction = (Button)findViewById(R.id.elseFunction);
         elseFunction.setOnClickListener(this);
-        padTest = (Button)findViewById(R.id.padFunction);
         padTest.setOnClickListener(this);
-        broadcast = (Button)findViewById(R.id.broadcast);
         broadcast.setOnClickListener(this);
-        data_test = (Button)findViewById(R.id.data_test);
         data_test.setOnClickListener(this);
-        runtime_permission_test = (Button)findViewById(R.id.runtime_permission_test);
         runtime_permission_test.setOnClickListener(this);
-        media_test = (Button)findViewById(R.id.media_test);
         media_test.setOnClickListener(this);
-        service_test = (Button)findViewById(R.id.service_test);
         service_test.setOnClickListener(this);
-        web_test = (Button)findViewById(R.id.web_test);
         web_test.setOnClickListener(this);
-        map_test = (Button)findViewById(R.id.map_test);
         map_test.setOnClickListener(this);
+        practise_test.setOnClickListener(this);
     }
 
     @Override
@@ -114,11 +118,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.map_test:
-                intent = new Intent(this, AlarmService.class);
-                startService(intent);
-//                intent = new Intent(this, StartActivity11.class);
-//                startActivity(intent);
+//                intent = new Intent(this, AlarmService.class);
+//                startService(intent);
+                intent = new Intent(this, StartActivity11.class);
+                startActivity(intent);
                 break;
+            case R.id.practise_test:
+                intent = new Intent(this, ListView1Activity.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }

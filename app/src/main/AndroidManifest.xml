@@ -172,7 +172,9 @@
         <service
             android:name=".Advanced.AlarmService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".Views.ElseListView.ListView1Activity"></activity>
     </application>
 
 </manifest>
