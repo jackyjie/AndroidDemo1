@@ -10,15 +10,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- 百度地图位置 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
+    <!-- &lt;!&ndash; 百度地图位置 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
     <application
         android:name=".Utils.MyApplication"
         android:allowBackup="true"
@@ -27,10 +26,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- 百度地图定义 -->
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value=" AUIYccVRBK1X2iqDvMbyhS20kMlAGRmH" />
+        <!-- &lt;!&ndash; 百度地图定义 &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.baidu.lbsapi.API_KEY" -->
+        <!-- android:value=" AUIYccVRBK1X2iqDvMbyhS20kMlAGRmH" /> -->
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -59,7 +58,7 @@
         <activity android:name=".Else.CalculateActivity" />
         <activity android:name=".Views.RelativeLayoutActivity" />
         <activity android:name=".Views.FrameLayoutActivity" />
-        <activity android:name=".MainActivity$RelativeLayoutActivity2" />
+        <!-- <activity android:name=".MainActivity$RelativeLayoutActivity2" /> -->
         <activity android:name=".Views.FramelayoutActivity2" />
         <activity android:name=".Views.PercentLayoutActivity" />
         <activity android:name=".Views.TitleLayoutActivity" />
@@ -160,11 +159,11 @@
         <activity android:name=".Web.WebViewActivity" />
         <activity android:name=".map.StartActivity11" />
 
-        <!-- 百度地图定义 -->
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote" />
+        <!-- &lt;!&ndash; 百度地图定义 &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.baidu.location.f" -->
+        <!-- android:enabled="true" -->
+        <!-- android:process=":remote" /> -->
 
         <activity android:name=".Views.MaterialDesign.StartActivity23" />
         <activity android:name=".Advanced.TimerActivity" />
@@ -174,7 +173,28 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Views.ElseListView.ListView1Activity"></activity>
+        <activity android:name=".Views.ElseListView.ListView1Activity" />
+        <activity android:name=".FunctionCode.FunctionCodeActivity" />
+        <activity android:name=".FunctionCode.aRemoteViewDemo" />
+        <activity android:name=".FunctionCode.AppWidgetDemo" />
+
+        <receiver android:name=".FunctionCode.NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".FunctionCode.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".FunctionCode.WidgetService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

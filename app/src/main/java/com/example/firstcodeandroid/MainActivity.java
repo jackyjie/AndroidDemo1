@@ -10,6 +10,7 @@ import com.example.firstcodeandroid.Advanced.AlarmService;
 import com.example.firstcodeandroid.Broadcast.StartActivity5;
 import com.example.firstcodeandroid.Data.StartActivity6;
 import com.example.firstcodeandroid.Else.StartActivity3;
+import com.example.firstcodeandroid.FunctionCode.FunctionCodeActivity;
 import com.example.firstcodeandroid.Intent.StartActivity1;
 import com.example.firstcodeandroid.Menu.MenuTest;
 import com.example.firstcodeandroid.MultiMedia.StartActivity8;
@@ -23,37 +24,34 @@ import com.example.firstcodeandroid.map.StartActivity11;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button menu_test;
-    private Button virtual_intent_test;
-    private Button view_test;
-    private Button elseFunction;
-    private Button padTest;
-    private Button broadcast;
-    private Button data_test;
-    private Button runtime_permission_test;
-    private Button media_test;
-    private Button service_test;
-    private Button web_test;
-    private Button map_test;
-    private Button practise_test;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        menu_test = (Button)findViewById(R.id.menu_test);
-        virtual_intent_test = (Button)findViewById(R.id.virtual_intent_test);
-        view_test = (Button)findViewById(R.id.view_test);
-        elseFunction = (Button)findViewById(R.id.elseFunction);
-        padTest = (Button)findViewById(R.id.padFunction);
-        broadcast = (Button)findViewById(R.id.broadcast);
-        data_test = (Button)findViewById(R.id.data_test);
-        runtime_permission_test = (Button)findViewById(R.id.runtime_permission_test);
-        media_test = (Button)findViewById(R.id.media_test);
-        service_test = (Button)findViewById(R.id.service_test);
-        web_test = (Button)findViewById(R.id.web_test);
-        map_test = (Button)findViewById(R.id.map_test);
-        practise_test = (Button)findViewById(R.id.practise_test);
+        Button menu_test = (Button)findViewById(R.id.menu_test);
+        Button virtual_intent_test = (Button)findViewById(R.id.virtual_intent_test);
+        Button view_test = (Button)findViewById(R.id.view_test);
+        Button elseFunction = (Button)findViewById(R.id.elseFunction);
+        Button padTest = (Button)findViewById(R.id.padFunction);
+        Button broadcast = (Button)findViewById(R.id.broadcast);
+        Button data_test = (Button)findViewById(R.id.data_test);
+        Button runtime_permission_test = (Button)findViewById(R.id.runtime_permission_test);
+        Button media_test = (Button)findViewById(R.id.media_test);
+        Button service_test = (Button)findViewById(R.id.service_test);
+        Button web_test = (Button)findViewById(R.id.web_test);
+        Button map_test = (Button)findViewById(R.id.map_test);
+        Button practise_test = (Button)findViewById(R.id.practise_test);
+        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
+//        Button remoteView = (Button)findViewById(R.id.remoteView);
         menu_test.setOnClickListener(this);
         virtual_intent_test.setOnClickListener(this);
         view_test.setOnClickListener(this);
@@ -67,6 +65,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         web_test.setOnClickListener(this);
         map_test.setOnClickListener(this);
         practise_test.setOnClickListener(this);
+        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
+//        remoteView.setOnClickListener(this);
     }
 
     @Override
@@ -123,10 +132,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, StartActivity11.class);
                 startActivity(intent);
                 break;
-            case R.id.practise_test:
-                intent = new Intent(this, ListView1Activity.class);
+            case R.id.remoteView:
+                intent = new Intent(this, FunctionCodeActivity.class);
                 startActivity(intent);
                 break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.practise_test:
+//                intent = new Intent(this, ListView1Activity.class);
+//                startActivity(intent);
+//                break;
 
         }
     }

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.firstcodeandroid.R;
-import com.google.zxing.client.android.CaptureActivity;
+//import com.google.zxing.client.android.CaptureActivity;
 
 public class StartActivity3 extends AppCompatActivity implements View.OnClickListener{
 
@@ -43,8 +43,8 @@ public class StartActivity3 extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.else_btn3:
-                intent = new Intent(this, CaptureActivity.class);
-                startActivity(intent);
+//                intent = new Intent(this, CaptureActivity.class);
+//                startActivity(intent);
                 break ;
             case R.id.else_btn4:
                 intent = new Intent(this, CalculateActivity.class);

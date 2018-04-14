@@ -4,94 +4,184 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/practise_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="难点回顾"
-        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00ff00">
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/map_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="地图服务 test"
-        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffff">
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="Menu Test"
-        android:id="@+id/menu_test"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="第二行代码源码"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="隐式Intent Test"
-        android:id="@+id/virtual_intent_test"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00ff00">
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="View Test"
-        android:id="@+id/view_test"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:id="@+id/menu_test"/>
 
-    <Button
-        android:id="@+id/elseFunction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="其他功能如QRCODE test"
-        android:textSize="24sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐式Intent"
+            android:id="@+id/virtual_intent_test"/>
 
-    <Button
-        android:id="@+id/padFunction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="手机平板碎片 test"
-        android:textSize="24sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:id="@+id/view_test"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/broadcast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="广播 test"
-        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/padFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机平板碎片"/>
 
-    <Button
-        android:id="@+id/data_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="持久化数据 test"
-        android:textSize="24sp"/>
-    <Button
-        android:id="@+id/runtime_permission_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="运行时权限 test"
-        android:textSize="24sp"/>
+        <Button
+            android:id="@+id/broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广播"/>
 
-    <Button
-        android:id="@+id/media_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="多媒体 test"
-        android:textSize="24sp"/>
+        <Button
+            android:id="@+id/data_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="持久化数据"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/service_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="服务 test"
-        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/runtime_permission_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行时权限"/>
 
-    <Button
-        android:id="@+id/web_test"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/media_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多媒体"/>
+
+        <Button
+            android:id="@+id/service_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/practise_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="难点回顾"/>
+
+        <Button
+            android:id="@+id/map_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地图服务 "/>
+
+        <Button
+            android:id="@+id/web_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络技术 "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00ff00">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffff">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="网络技术 test"
-        android:textSize="24sp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="功能性源码"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00ff00">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/elseFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QRCODE"/>
+
+        <Button
+            android:id="@+id/remoteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RemoteView"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/remoteOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹出"/>
+
+        <Button
+            android:id="@+id/remoteChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变"/>
+
+        <Button
+            android:id="@+id/remoteWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启widget服务"/>
+    </LinearLayout>
+
+</LinearLayout>

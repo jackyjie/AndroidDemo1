@@ -161,9 +161,9 @@ public class StartActivity8 extends AppCompatActivity implements View.OnClickLis
                         .setContentTitle("This is content title")
                         .setContentText("This is content text")
                         .setWhen(System.currentTimeMillis())
-                        .setSmallIcon(R.drawable.launcher_icon)
+                        .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(),
-                                R.drawable.launcher_icon))
+                                R.mipmap.ic_launcher))
                         .build();
                 manager.notify(1, notification);
                 break;
@@ -176,9 +176,9 @@ public class StartActivity8 extends AppCompatActivity implements View.OnClickLis
                         .setContentTitle("This is content title")
                         .setContentText("This is content text")
                         .setWhen(System.currentTimeMillis())
-                        .setSmallIcon(R.drawable.launcher_icon)
+                        .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(),
-                                R.drawable.launcher_icon))
+                                R.mipmap.ic_launcher))
                         .setContentIntent(pi)
                         .setAutoCancel(true)
                         .setSound(Uri.fromFile(new File("/system/media/audio/ringtones/Harp.ogg")))
@@ -200,9 +200,9 @@ public class StartActivity8 extends AppCompatActivity implements View.OnClickLis
                                 + "This is content text."))
                         .setPriority(NotificationCompat.PRIORITY_MAX)
                         .setWhen(System.currentTimeMillis())
-                        .setSmallIcon(R.drawable.launcher_icon)
+                        .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(),
-                                R.drawable.launcher_icon))
+                                R.mipmap.ic_launcher))
                         .setContentIntent(pi)
                         .setAutoCancel(true)
                         .build();

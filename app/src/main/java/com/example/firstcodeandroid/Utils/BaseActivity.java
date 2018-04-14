@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -46,6 +48,18 @@ public class BaseActivity extends AppCompatActivity {
         super.onPause();
         if(forceOffReceiver!=null){
             unregisterReceiver(forceOffReceiver);
+        }
+    }
+
+    // 1.判断网络是否通畅
+    public boolean NetWorkAvaliable(){
+        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if(networkInfo != null && networkInfo.isAvailable()){
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
